@@ -1,0 +1,60 @@
+﻿<views:MvxWpfView
+    xmlns:views="clr-namespace:MvvmCross.Platforms.Wpf.Views;assembly=MvvmCross.Platforms.Wpf"
+    xmlns:mvx="clr-namespace:MvvmCross.Platforms.Wpf.Binding;assembly=MvvmCross.Platforms.Wpf"
+    xmlns:p ="clr-namespace:MvxCatalog.Wpf.Properties"
+             x:Class="MvxCatalog.Wpf.Views.CatalogView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:MvxCatalog.Wpf.Views"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Grid>
+        <ScrollViewer Margin="10,10,629,50" MaxHeight="500"
+                      CanContentScroll="False">
+            <StackPanel Height="500">
+                <Button Height="50" Margin="5,5,5,5"
+                    mvx:Bi.nd="Command AddProductCommand" Content="{x:Static p:Resources.AddButton}"></Button>
+                <Button Height="50" Margin="5,5,5,5"
+                    mvx:Bi.nd="Command MoreCommand" Content="{x:Static p:Resources.MoreButton}"></Button>
+                <Button Height="50" Margin="5,5,5,5"
+                    mvx:Bi.nd="Command UpdateCommand" Content="{x:Static p:Resources.UpdateButton}"></Button>
+                <Button Height="50" Margin="5,5,5,5"
+                    mvx:Bi.nd="Command DeleteCommand" Content="{x:Static p:Resources.DeleteButton}"></Button>
+                <Button Height="50" Margin="5,5,5,5"
+                    mvx:Bi.nd="Command SortCommand" Content="{x:Static p:Resources.SortButton}"></Button>
+                <Button Height="50" Margin="5,5,5,5" Click="StyleButton_Click"
+                    Content="{x:Static p:Resources.ChangeStyleButton}"></Button>
+                <Button Height="50" Margin="5,5,5,5" Click="LanguageButton_Click"
+                    Content="{x:Static p:Resources.LanguageButton}"></Button>
+            </StackPanel>
+        </ScrollViewer>
+        <StackPanel Margin="176,10,10,9.6">
+            <ListView ItemsSource="{Binding Products}"
+                      SelectedItem="{Binding SelectedItem}"
+                      ScrollViewer.VerticalScrollBarVisibility="Visible"
+                      ScrollViewer.CanContentScroll="False"
+                      MaxHeight="{Binding ListHeight}"
+                      Height="390">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <StackPanel>
+                            <TextBlock Text="{Binding Name}"
+                                       HorizontalAlignment="Left"
+                                       VerticalAlignment="Center"
+                                       FontWeight="Bold">
+                            </TextBlock>
+                            <Image Source="{Binding Img}"
+                                   Width="350" Height="200"
+                                   Stretch="Fill"
+                                   HorizontalAlignment="Right"
+                                   VerticalAlignment="Center">
+                            </Image>
+                        </StackPanel>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackPanel>
+    </Grid>
+</views:MvxWpfView>

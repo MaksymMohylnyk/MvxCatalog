@@ -1,0 +1,9 @@
+C:\Users\User\source\repos\MvxCatalog\MvxCatalog.Core\bin\Debug\netstandard2.0\MvxCatalog.Core.deps.json
+C:\Users\User\source\repos\MvxCatalog\MvxCatalog.Core\bin\Debug\netstandard2.0\MvxCatalog.Core.dll
+C:\Users\User\source\repos\MvxCatalog\MvxCatalog.Core\obj\Debug\netstandard2.0\MvxCatalog.Core.AssemblyInfoInputs.cache
+C:\Users\User\source\repos\MvxCatalog\MvxCatalog.Core\obj\Debug\netstandard2.0\MvxCatalog.Core.AssemblyInfo.cs
+C:\Users\User\source\repos\MvxCatalog\MvxCatalog.Core\bin\Debug\netstandard2.0\MvxCatalog.Core.pdb
+C:\Users\User\source\repos\MvxCatalog\MvxCatalog.Core\obj\Debug\netstandard2.0\MvxCatalog.Core.dll
+C:\Users\User\source\repos\MvxCatalog\MvxCatalog.Core\obj\Debug\netstandard2.0\MvxCatalog.Core.pdb
+C:\Users\User\source\repos\MvxCatalog\MvxCatalog.Core\obj\Debug\netstandard2.0\MvxCatalog.Core.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\MvxCatalog\MvxCatalog.Core\obj\Debug\netstandard2.0\MvxCatalog.Core.csprojAssemblyReference.cache

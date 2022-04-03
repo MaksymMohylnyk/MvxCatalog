@@ -1,0 +1,29 @@
+﻿<views:MvxWpfView
+    xmlns:views="clr-namespace:MvvmCross.Platforms.Wpf.Views;assembly=MvvmCross.Platforms.Wpf"
+    xmlns:mvx="clr-namespace:MvvmCross.Platforms.Wpf.Binding;assembly=MvvmCross.Platforms.Wpf"
+    xmlns:p ="clr-namespace:MvxCatalog.Wpf.Properties"
+    x:Class="MvxCatalog.Wpf.Views.MoreView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:MvxCatalog.Wpf.Views"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Grid>
+        <StackPanel Margin="10,10,640,10">
+            <Button Height="50" Margin="5,5,5,5" mvx:Bi.nd="Command BackCommand" Content="{x:Static p:Resources.BackButton}"></Button>
+        </StackPanel>
+        <StackPanel Margin="165,10,10,10">
+            <Label Content="{x:Static p:Resources.PrName}" Margin="5,5,5,5" FontSize="14" HorizontalAlignment="Center"></Label>
+            <TextBox Height="20" Margin="5,5,5,5" Text ="{Binding Product.Name,
+                UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}" IsReadOnly="True"></TextBox>
+            <Image Source="{Binding Product.Img}" Height="170" Margin="130,0,130,0"/>
+            <Label Content="{x:Static p:Resources.PrAbout}" Margin="5,5,5,5" FontSize="14" HorizontalAlignment="Center"></Label>
+            <TextBox Height="120" Margin="5,5,5,5" Text ="{Binding Product.Info,
+                UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}"
+                     IsReadOnly="True" ScrollViewer.CanContentScroll="False"
+                     MaxHeight="120"></TextBox>
+        </StackPanel>
+    </Grid>
+</views:MvxWpfView>

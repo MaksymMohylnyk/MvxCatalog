@@ -1,0 +1,61 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:local="clr-namespace:MvxCatalog.Wpf.Styles">
+
+    <Style TargetType="Button">
+        <Setter Property="Button.Background">
+            <Setter.Value>
+                <LinearGradientBrush StartPoint="1,1" EndPoint="0,0">
+                    <GradientStop Color="#bf9a7f" Offset="0"></GradientStop>
+                    <GradientStop Color="#b3969a" Offset="0.5"></GradientStop>
+                </LinearGradientBrush>
+            </Setter.Value>
+        </Setter>
+        <Setter Property="Button.Foreground" Value="#430709"></Setter>
+    </Style>
+
+    <Style TargetType="TextBlock">
+        <Setter Property="TextBlock.Foreground" Value="#430709"></Setter>
+    </Style>
+
+    <Style TargetType="Grid">
+        <Setter Property="Grid.Background" Value="#e5efe9"/>
+    </Style>
+
+    <Style TargetType="ListView">
+        <Setter Property="ListBox.Background" Value="#bf9a7f"></Setter>
+    </Style>
+
+    <Style TargetType="ListViewItem">
+        <Setter Property="ListViewItem.Background">
+            <Setter.Value>
+                <LinearGradientBrush StartPoint="0,0" EndPoint="1,0">
+                    <GradientStop Color="#b3969a" Offset="0"></GradientStop>
+                    <GradientStop Color="#7f3943" Offset="0.5"></GradientStop>
+                </LinearGradientBrush>
+            </Setter.Value>
+        </Setter>
+        <Setter Property="ListViewItem.Foreground" Value="#430709"></Setter>
+        <Setter Property="ListViewItem.BorderBrush" Value="#430709"></Setter>
+    </Style>
+
+    <Style TargetType="TextBox">
+        <Setter Property="ListViewItem.Background">
+            <Setter.Value>
+                <LinearGradientBrush StartPoint="0,0" EndPoint="1,0">
+                    <GradientStop Color="#b3969a" Offset="0"></GradientStop>
+                    <GradientStop Color="#7f3943" Offset="0.5"></GradientStop>
+                </LinearGradientBrush>
+            </Setter.Value>
+        </Setter>
+        <Setter Property="TextBox.Foreground" Value="#e5efe9"></Setter>
+        <Setter Property="TextBox.BorderBrush" Value="#430709"></Setter>
+    </Style>
+
+    <Style TargetType="Label">
+        <Setter Property="Label.Foreground" Value="#430709"></Setter>
+    </Style>
+
+
+
+</ResourceDictionary>
